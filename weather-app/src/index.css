@@ -1,0 +1,22 @@
+body{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  background-color: rgb(16, 87, 87);
+  height: auto;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 100px;
+  font-size: 25px;
+  min-height: 5rem;
+}
+button {
+  background-color: green;
+  border: none;
+  width: 100px;
+  height: 25px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
