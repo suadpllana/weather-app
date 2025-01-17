@@ -44,7 +44,7 @@ const Forecast = ({location , emoji}) => {
         <h1>Forecasted Weather</h1>
      {forecastedDays && forecastedDays.map((day , index) => (
         <div className="forecast" key={index}>
-            <div className="forecast-title" onClick={() => setAccordion(index)} >
+            <div className="forecast-title" onClick={() => setAccordion(index)} onDoubleClick={() => setAccordion(-1)}>
                 <div>
                 <p className="date">{emoji(kelvinToCelsius(day.main.temp))} {formatDate(day.dt_txt.slice(0,10))}</p>
                 </div>
