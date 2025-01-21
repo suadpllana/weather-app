@@ -3,9 +3,10 @@ import {useState , useEffect} from "react"
 const Forecast = ({location , emoji}) => {
     const [forecastedDays , setForcastedDays] = useState([])
     const [accordion , setAccordion] = useState(-1)
+ 
     useEffect(() => {
         async function getForecast() {
-            const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${location.lat}&lon=${location.lon}&appid=eb3c88cf69e595751d0eae9e1cefd0b9`;
+            const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${location.lat}&lon=${location.lon}&appid=${import.meta.env.VITE_API_KEY}`;
             const response = await fetch(url);
             const data = await response.json();
     

@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { FaWater } from "react-icons/fa";
 import { TbWind } from "react-icons/tb";
-import Forecast from '../Forecast';
+import Forecast from './Forecast';
 function Weather() {
     const [weatherData, setWeatherData] = useState();
     const [error, setError] = useState();
