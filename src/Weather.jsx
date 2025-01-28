@@ -40,11 +40,11 @@ function Weather() {
                     fetchWeatherByLocation(latitude, longitude);
                 },
                 (err) => {
-                    setError("Geolocation permission denied or unavailable.");
+                    console.error(err);
                 }
             );
         } else {
-            setError("Geolocation is not supported by this browser.");
+            console.error("Geolocation is not supported by this browser.");
         }
     }
 
